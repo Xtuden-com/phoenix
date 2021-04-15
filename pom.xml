@@ -119,7 +119,7 @@
     <stream.version>2.9.5</stream.version>
     <i18n-util.version>1.0.4</i18n-util.version>
     <guice.version>4.0</guice.version>
-    <zookeeper.version>3.4.14</zookeeper.version>
+    <zookeeper.version>3.5.5</zookeeper.version>
     <curator.version>4.0.0</curator.version>
     <jcodings.version>1.0.18</jcodings.version>
     <thrift.version>0.9.3-1</thrift.version>
@@ -145,7 +145,7 @@
     <it.failIfNoSpecifiedTests>false</it.failIfNoSpecifiedTests>
     <surefire.failIfNoSpecifiedTests>false</surefire.failIfNoSpecifiedTests>
     <!-- Empty argument when code coverage is deactivated -->
-    <jacocoArgLine></jacocoArgLine>
+    <jacocoArgLine/>
 
     <!-- Set default encoding so multi-byte tests work correctly on the Mac -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -223,7 +223,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -474,13 +474,13 @@
                    hbaseMajor == 2 &amp;&amp; (
                      ("${hbase.compat.version}".equals("2.1.6")
                        &amp;&amp; hbaseMinor == 1
-                       &amp;&amp; hbasePatch &gt;=6)
+                       &amp;&amp; hbasePatch >=6)
                      || ("${hbase.compat.version}".equals("2.2.1")
                        &amp;&amp; hbaseMinor == 2
-                       &amp;&amp; hbasePatch &gt;=1)
+                       &amp;&amp; hbasePatch >=1)
                      || ("${hbase.compat.version}".equals("2.3.0")
                        &amp;&amp; hbaseMinor == 3
-                       &amp;&amp; hbasePatch &gt;=0)
+                       &amp;&amp; hbasePatch >=0)
                    )
                    </condition>
                   </evaluateBeanshell>
@@ -1557,7 +1557,7 @@
         <!-- PHOENIX-6010 3.1.3 doesn't work because of Guava rebase -->
         <hadoop.version>3.1.2</hadoop.version>
         <hbase.thirdparty.version>3.3.0</hbase.thirdparty.version>
-        <zookeeper.version>3.5.7</zookeeper.version>
+        <zookeeper.version>3.5.5</zookeeper.version>
       </properties>
     </profile>
     <profile>
