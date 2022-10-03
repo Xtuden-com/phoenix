@@ -93,7 +93,7 @@
 
     <!-- Dependency versions -->
     <commons-cli.version>1.4</commons-cli.version>
-    <jackson.version>2.10.3</jackson.version>
+    <jackson.version>2.13.4</jackson.version>
     <antlr.version>3.5.2</antlr.version>
     <log4j.version>1.2.17</log4j.version>
     <disruptor.version>3.3.6</disruptor.version>
@@ -145,7 +145,7 @@
     <it.failIfNoSpecifiedTests>false</it.failIfNoSpecifiedTests>
     <surefire.failIfNoSpecifiedTests>false</surefire.failIfNoSpecifiedTests>
     <!-- Empty argument when code coverage is deactivated -->
-    <jacocoArgLine></jacocoArgLine>
+    <jacocoArgLine/>
 
     <!-- Set default encoding so multi-byte tests work correctly on the Mac -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -223,7 +223,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <ignore/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -474,13 +474,13 @@
                    hbaseMajor == 2 &amp;&amp; (
                      ("${hbase.compat.version}".equals("2.1.6")
                        &amp;&amp; hbaseMinor == 1
-                       &amp;&amp; hbasePatch &gt;=6)
+                       &amp;&amp; hbasePatch >=6)
                      || ("${hbase.compat.version}".equals("2.2.1")
                        &amp;&amp; hbaseMinor == 2
-                       &amp;&amp; hbasePatch &gt;=1)
+                       &amp;&amp; hbasePatch >=1)
                      || ("${hbase.compat.version}".equals("2.3.0")
                        &amp;&amp; hbaseMinor == 3
-                       &amp;&amp; hbasePatch &gt;=0)
+                       &amp;&amp; hbasePatch >=0)
                    )
                    </condition>
                   </evaluateBeanshell>
